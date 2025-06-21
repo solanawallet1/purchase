@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بوت فحص وشراء محافظ العملات الرقمية - خدمة احترافية وآمنة</title>
-    <meta name="description" content="خدمة احترافية لفحص وشراء محافظ العملات الرقمية مع أفضل الأسعار ونظام عمولات مربح">
+    <title>Solana Wallet Purchase - Professional & Secure Service</title>
+    <meta name="description" content="Professional service for buying old Solana wallets with best prices and profitable referral system">
     
     <!-- Bootstrap RTL CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
@@ -485,22 +485,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">الرئيسية</a>
+                        <a class="nav-link" href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">الخدمات</a>
+                        <a class="nav-link" href="#services" data-en="Services" data-ar="الخدمات">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">المميزات</a>
+                        <a class="nav-link" href="#features" data-en="Features" data-ar="المميزات">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pricing">الأسعار</a>
+                        <a class="nav-link" href="#pricing" data-en="Requirements" data-ar="الشروط">Requirements</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#referral">نظام الإحالة</a>
+                        <a class="nav-link" href="#referral" data-en="Referral System" data-ar="نظام الإحالة">Referral System</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">التواصل</a>
+                        <a class="nav-link" href="#contact" data-en="Contact" data-ar="التواصل">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-2" id="langToggle" onclick="toggleLanguage()">
+                            <i class="fas fa-language me-1"></i>
+                            <span id="langText">العربية</span>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -513,22 +519,21 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <h1 class="display-4 fw-bold text-white mb-4">
-                        شراء محافظ Solana القديمة
-                        <span class="text-warning">بأفضل الأسعار</span>
+                    <h1 class="display-4 fw-bold text-white mb-4" data-en="Buy Old Solana Wallets<br><span class='text-warning'>Best Prices</span>" data-ar="شراء محافظ Solana القديمة<br><span class='text-warning'>بأفضل الأسعار</span>">
+                        Buy Old Solana Wallets
+                        <span class="text-warning">Best Prices</span>
                     </h1>
-                    <p class="lead text-white-50 mb-4">
-                        نشتري محافظ Solana بعمر أكثر من شهرين وقيمة تصل حتى 3 SOL
-                        مع أفضل الأسعار ونظام عمولات مربح للشركاء
+                    <p class="lead text-white-50 mb-4" data-en="We buy Solana wallets older than 2 months with values up to 3 SOL at the best prices with profitable referral system" data-ar="نشتري محافظ Solana بعمر أكثر من شهرين وقيمة تصل حتى 3 SOL مع أفضل الأسعار ونظام عمولات مربح للشركاء">
+                        We buy Solana wallets older than 2 months with values up to 3 SOL at the best prices with profitable referral system
                     </p>
                     <div class="d-flex gap-3 flex-wrap">
-                        <a href="https://t.me/buysolwalletsbot" class="btn btn-primary btn-lg rounded-pill px-4" target="_blank">
+                        <a href="https://t.me/buysolwalletsbot" class="btn btn-primary btn-lg rounded-pill px-4" target="_blank" data-en="<i class='fas fa-rocket me-2'></i>Start Now" data-ar="<i class='fas fa-rocket me-2'></i>ابدأ الآن">
                             <i class="fas fa-rocket me-2"></i>
-                            ابدأ الآن
+                            Start Now
                         </a>
-                        <a href="https://t.me/Purcha11" class="btn btn-outline-light btn-lg rounded-pill px-4" target="_blank">
+                        <a href="https://t.me/Purcha11" class="btn btn-outline-light btn-lg rounded-pill px-4" target="_blank" data-en="<i class='fab fa-telegram me-2'></i>Contact Us" data-ar="<i class='fab fa-telegram me-2'></i>تواصل معنا">
                             <i class="fab fa-telegram me-2"></i>
-                            تواصل معنا
+                            Contact Us
                         </a>
                     </div>
                 </div>
@@ -550,8 +555,8 @@
     <section id="services" class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="display-5 fw-bold text-primary mb-3">خدماتنا المتميزة</h2>
-                <p class="lead text-muted">نقدم مجموعة شاملة من الخدمات المتخصصة في مجال العملات الرقمية</p>
+                <h2 class="display-5 fw-bold text-primary mb-3" data-en="Our Distinguished Services" data-ar="خدماتنا المتميزة">Our Distinguished Services</h2>
+                <p class="lead text-muted" data-en="We provide comprehensive services specialized in cryptocurrency field" data-ar="نقدم مجموعة شاملة من الخدمات المتخصصة في مجال العملات الرقمية">We provide comprehensive services specialized in cryptocurrency field</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -559,14 +564,14 @@
                         <div class="service-icon">
                             <i class="fas fa-search-dollar"></i>
                         </div>
-                        <h4 class="fw-bold mb-3">فحص المحافظ</h4>
-                        <p class="text-muted mb-4">
-                            فحص وتقييم محافظ Solana القديمة بعمر أكثر من شهرين لتحديد قيمتها الحقيقية
+                        <h4 class="fw-bold mb-3" data-en="Wallet Inspection" data-ar="فحص المحافظ">Wallet Inspection</h4>
+                        <p class="text-muted mb-4" data-en="Inspect and evaluate old Solana wallets older than 2 months to determine their real value" data-ar="فحص وتقييم محافظ Solana القديمة بعمر أكثر من شهرين لتحديد قيمتها الحقيقية">
+                            Inspect and evaluate old Solana wallets older than 2 months to determine their real value
                         </p>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>محافظ Solana عمر أكثر من شهرين</li>
-                            <li><i class="fas fa-check text-success me-2"></i>قيمة تصل حتى 3 SOL</li>
-                            <li><i class="fas fa-check text-success me-2"></i>تقييم فوري ودقيق</li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-en=" Solana wallets older than 2 months" data-ar="محافظ Solana عمر أكثر من شهرين"> Solana wallets older than 2 months</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-en=" Value up to 3 SOL" data-ar="قيمة تصل حتى 3 SOL"> Value up to 3 SOL</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-en=" Instant and accurate evaluation" data-ar="تقييم فوري ودقيق"> Instant and accurate evaluation</span></li>
                         </ul>
                     </div>
                 </div>
@@ -575,14 +580,14 @@
                         <div class="service-icon">
                             <i class="fas fa-wallet"></i>
                         </div>
-                        <h4 class="fw-bold mb-3">شراء المحافظ</h4>
-                        <p class="text-muted mb-4">
-                            نشتري محافظ Solana القديمة (أكثر من شهرين) بقيمة تصل حتى 3 SOL بأفضل الأسعار
+                        <h4 class="fw-bold mb-3" data-en="Wallet Purchase" data-ar="شراء المحافظ">Wallet Purchase</h4>
+                        <p class="text-muted mb-4" data-en="We buy old Solana wallets (older than 2 months) with values up to 3 SOL at the best prices" data-ar="نشتري محافظ Solana القديمة (أكثر من شهرين) بقيمة تصل حتى 3 SOL بأفضل الأسعار">
+                            We buy old Solana wallets (older than 2 months) with values up to 3 SOL at the best prices
                         </p>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>قيمة تصل حتى 3 SOL</li>
-                            <li><i class="fas fa-check text-success me-2"></i>محافظ عمرها أكثر من شهرين</li>
-                            <li><i class="fas fa-check text-success me-2"></i>دفع فوري وآمن</li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-en=" Value up to 3 SOL" data-ar="قيمة تصل حتى 3 SOL"> Value up to 3 SOL</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-en=" Wallets older than 2 months" data-ar="محافظ عمرها أكثر من شهرين"> Wallets older than 2 months</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-en=" Instant and secure payment" data-ar="دفع فوري وآمن"> Instant and secure payment</span></li>
                         </ul>
                     </div>
                 </div>
@@ -591,14 +596,14 @@
                         <div class="service-icon">
                             <i class="fas fa-users"></i>
                         </div>
-                        <h4 class="fw-bold mb-3">نظام الإحالة</h4>
-                        <p class="text-muted mb-4">
-                            احصل على عمولة من كل عملية شراء تتم عبر رابط الإحالة الخاص بك
+                        <h4 class="fw-bold mb-3" data-en="Referral System" data-ar="نظام الإحالة">Referral System</h4>
+                        <p class="text-muted mb-4" data-en="Get commission from every purchase made through your referral link" data-ar="احصل على عمولة من كل عملية شراء تتم عبر رابط الإحالة الخاص بك">
+                            Get commission from every purchase made through your referral link
                         </p>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>عمولة 10% على كل بيع</li>
-                            <li><i class="fas fa-check text-success me-2"></i>دفع فوري للعمولات</li>
-                            <li><i class="fas fa-check text-success me-2"></i>إحصائيات مفصلة</li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-en=" 10% commission on every sale" data-ar="عمولة 10% على كل بيع"> 10% commission on every sale</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-en=" Instant commission payment" data-ar="دفع فوري للعمولات"> Instant commission payment</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-en=" Detailed statistics" data-ar="إحصائيات مفصلة"> Detailed statistics</span></li>
                         </ul>
                     </div>
                 </div>
@@ -958,6 +963,44 @@
                 this.style.transform = 'translateY(0)';
             });
         });
+
+        // Language Toggle Functionality
+        let currentLang = 'en';
+
+        function toggleLanguage() {
+            const html = document.documentElement;
+            const elements = document.querySelectorAll('[data-en][data-ar]');
+            
+            if (currentLang === 'en') {
+                // Switch to Arabic
+                html.setAttribute('lang', 'ar');
+                html.setAttribute('dir', 'rtl');
+                document.getElementById('langText').textContent = 'English';
+                
+                elements.forEach(element => {
+                    element.innerHTML = element.getAttribute('data-ar');
+                });
+                
+                currentLang = 'ar';
+                
+                // Update page title
+                document.title = 'بوت فحص وشراء محافظ العملات الرقمية - خدمة احترافية وآمنة';
+            } else {
+                // Switch to English
+                html.setAttribute('lang', 'en');
+                html.setAttribute('dir', 'ltr');
+                document.getElementById('langText').textContent = 'العربية';
+                
+                elements.forEach(element => {
+                    element.innerHTML = element.getAttribute('data-en');
+                });
+                
+                currentLang = 'en';
+                
+                // Update page title
+                document.title = 'Solana Wallet Purchase - Professional & Secure Service';
+            }
+        }
     </script>
 </body>
 </html>
