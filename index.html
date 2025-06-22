@@ -407,9 +407,12 @@
 
         .step-item {
             display: flex;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 2rem;
             position: relative;
+            text-align: center !important;
+            justify-content: center;
         }
 
         .step-item:not(:last-child)::after {
@@ -433,13 +436,29 @@
             justify-content: center;
             font-weight: bold;
             font-size: 1.2rem;
-            margin-left: 1rem;
             flex-shrink: 0;
+            margin-bottom: 1rem;
+        }
+
+        .step-content {
+            text-align: center !important;
+            width: 100%;
         }
 
         .step-content h5 {
             color: var(--primary-color);
             margin-bottom: 0.5rem;
+            text-align: center !important;
+        }
+
+        .step-content p {
+            text-align: center !important;
+            margin: 0;
+        }
+
+        /* Remove connecting lines for vertical layout */
+        .step-item:not(:last-child)::after {
+            display: none;
         }
 
         /* How to Cards */
@@ -940,25 +959,25 @@
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="referral-steps">
-                        <div class="step-item">
+                        <div class="step-item text-center">
                             <div class="step-number">1</div>
                             <div class="step-content">
-                                <h5 class="fw-bold" data-en="Get Referral Link" data-ar="احصل على رابط الإحالة">Get Referral Link</h5>
-                                <p class="text-muted" data-en="Register with the bot and get your personal referral link" data-ar="سجل في البوت واحصل على رابط الإحالة الخاص بك">Register with the bot and get your personal referral link</p>
+                                <h5 class="fw-bold text-center" data-en="Get Referral Link" data-ar="احصل على رابط الإحالة">Get Referral Link</h5>
+                                <p class="text-muted text-center" data-en="Register with the bot and get your personal referral link" data-ar="سجل في البوت واحصل على رابط الإحالة الخاص بك">Register with the bot and get your personal referral link</p>
                             </div>
                         </div>
-                        <div class="step-item">
+                        <div class="step-item text-center">
                             <div class="step-number">2</div>
                             <div class="step-content">
-                                <h5 class="fw-bold" data-en="Share the Link" data-ar="شارك الرابط">Share the Link</h5>
-                                <p class="text-muted" data-en="Share your link with friends and followers on social networks" data-ar="شارك رابطك مع الأصدقاء ومتابعيك في الشبكات الاجتماعية">Share your link with friends and followers on social networks</p>
+                                <h5 class="fw-bold text-center" data-en="Share the Link" data-ar="شارك الرابط">Share the Link</h5>
+                                <p class="text-muted text-center" data-en="Share your link with friends and followers on social networks" data-ar="شارك رابطك مع الأصدقاء ومتابعيك في الشبكات الاجتماعية">Share your link with friends and followers on social networks</p>
                             </div>
                         </div>
-                        <div class="step-item">
+                        <div class="step-item text-center">
                             <div class="step-number">3</div>
                             <div class="step-content">
-                                <h5 class="fw-bold" data-en="Get Commission" data-ar="احصل على العمولة">Get Commission</h5>
-                                <p class="text-muted" data-en="Earn 10% from every sale made through your link" data-ar="اربح 10% من كل عملية بيع تتم عبر رابطك">Earn 10% from every sale made through your link</p>
+                                <h5 class="fw-bold text-center" data-en="Get Commission" data-ar="احصل على العمولة">Get Commission</h5>
+                                <p class="text-muted text-center" data-en="Earn 10% from every sale made through your link" data-ar="اربح 10% من كل عملية بيع تتم عبر رابطك">Earn 10% from every sale made through your link</p>
                             </div>
                         </div>
                     </div>
